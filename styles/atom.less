@@ -19,3 +19,48 @@ atom-workspace {
 		box-shadow: 0 0 1px white inset;
   }
 }
+.tree-view .tree-view-root{
+  background: @app-background-color;
+}
+.list-item{
+  color: @loca-text-color !important;
+  text-shadow: none !important;
+}
+.selected{
+  color:@text-color-selected !important;
+}
+.tree-view .selected:before{
+  background: @app-background-color !important;
+}
+atom-text-editor .gutter{
+  background: @app-background-color !important;
+  color:@loca-text-color !important;
+}
+a.icon{
+  color: @loca-text-color !important;
+}
+.settings-view .config-menu .nav > li.active > a{
+  color: @text-color-selected !important;
+}
+.settings-view section .section-heading, .settings-view .section .section-heading{
+  color:@loca-text-color !important;
+}
+.settings-view .text{
+  color: @loca-text-color !important;
+}
+.settings-view .settings-panel label{
+  color: @text-color-selected;
+}
+.settings-view select.form-control{
+  color: @text-color-selected;
+}
+.atom-dock-resize-handle.left, .atom-dock-resize-handle.right{
+  background: #26474a;
+  width: 2px !important;
+}
+.atom-dock-toggle-button .atom-dock-toggle-button-inner.left .icon{
+  color:#26474a;
+}
+.atom-dock-toggle-button .atom-dock-toggle-button-inner{
+  border-color: #26474a;
+}

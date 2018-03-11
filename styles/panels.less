@@ -10,9 +10,9 @@
 atom-panel, .tool-panel {
   .text(normal);
   position: relative;
-
+  color: @loca-text-color;
   background-color: @tool-panel-background-color;
-
+  text-shadow: none !important;
   &.bottom, &.panel-bottom,
   &.footer, &.footer-bottom {
     border-top: 1px solid @tool-panel-border-color;
@@ -27,7 +27,7 @@ atom-panel, .tool-panel {
   }
 
   .inset-panel {
-    border-radius: @component-border-radius;
+    border-radius: @app-background-color;
 
     border: 1px solid @tool-panel-border-color;
   }
@@ -52,4 +52,7 @@ atom-panel, .tool-panel {
     @text: lighten(@text-color, 10%);
     .btn-background(@bg, @hover, @selected, @button-border-color, @text, @text);
   }
+}
+.atom-dock-mask{
+  background-color:  @app-background-color;
 }
